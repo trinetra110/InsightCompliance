@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Insight Compliance" />
+    <title>Prediction Results and Insights</title>
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/static/css/result.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Results for Target Column: {{ target_column }}</h1>
+      <h2>Model Performance</h2>
+      <p class="score-text">{{ score_text }}</p>
+      <h2>Generated Insights</h2>
+      <div class="insights-card">
+        <p>{{ insights }}</p>
+      </div>
+      <br />
+      <a href="{{ url_for('index') }}">Upload Another Dataset</a>
+    </div>
+    <script src="/static/script/result.js"></script>
+  </body>
+</html>

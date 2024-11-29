@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Insight Compliance" />
+    <title>Select Target Column</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/analyze.css') }}"
+    />
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dataset Preview</h1>
+      <div class="table-container">
+        {% for table in tables %} {{ table|safe }} {% endfor %}
+      </div>
+      <h2>Select Target Column for Prediction</h2>
+      <form action="{{ url_for('predict') }}" method="post">
+        <label for="target_column">Select Target Column:</label>
+        <select name="target_column" id="target_column" class="dropdown">
+          {% for column in columns %}
+          <option value="{{ column }}">{{ column }}</option>
+          {% endfor %}</select
+        ><br /><br />
+        <input
+          type="submit"
+          value="Predict and Generate Insights"
+          class="predict-btn"
+        />
+      </form>
+    </div>
+  </body>
+</html>

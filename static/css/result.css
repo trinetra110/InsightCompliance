@@ -1,0 +1,142 @@
+/* General styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 3em;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    #1e3c72,
+    #2a5298
+  ); /* AI-oriented gradient */
+  /*background-image: url("../images/background.jpg"); /* Background image */
+  /*background-size: cover;
+  background-position: center;*/
+  color: #fff;
+}
+
+/* Centering the container */
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* Overlay effect */
+  padding: 30px 20px; /* More padding for desktop */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+  width: 90%;
+  margin-top: 30px; /* Added spacing for desktop */
+  margin-bottom: 30px; /* Added spacing for desktop */
+}
+
+/* Heading styles */
+h1,
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Styling for the score text (larger and colorful) */
+.score-text {
+  font-size: 1.5rem;
+  color: #06d2f2; /* Bright color for score */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Insights card styling */
+.insights-card {
+  background: #02e7eb; /* Changed color for insights card */
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 90%;
+  margin: 20px auto;
+  font-size: 0.8em; /* Reduced size for insights text */
+  line-height: 1.5;
+}
+
+/* Link as a red button */
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #d32f2f; /* Red color for the button */
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  background: #b71c1c; /* Darker red on hover */
+  transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .body {
+    margin: 10em;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .score-text {
+    font-size: 1.5rem;
+  }
+
+  .insights-card {
+    width: 100%;
+    font-size: 1rem; /* Adjusted for mobile */
+  }
+
+  a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20em;
+    margin-bottom: 20em;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .score-text {
+    font-size: 1.2rem;
+  }
+
+  .insights-card {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}

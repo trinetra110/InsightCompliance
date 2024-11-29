@@ -1,0 +1,120 @@
+/* General styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    #1e3c72,
+    #2a5298
+  ); /* AI-oriented gradient */
+  background-image: url("../images/background.jpg"); /* Background image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Centering the container */
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* Overlay effect */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+  width: 600px;
+}
+
+/* Heading styles */
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Table container */
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+/* Styling for dataframes */
+.dataframe {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.8); /* Slight background to stand out */
+  color: #000;
+}
+.dataframe th,
+.dataframe td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.dataframe th {
+  background-color: #4caf50; /* Green for headers */
+  color: white;
+  text-align: center;
+}
+
+/* Dropdown styles */
+.dropdown {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 80%;
+  max-width: 400px;
+  background: #fff;
+  color: #000;
+}
+
+/* Button styles */
+.predict-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #049a9f; /* Same button color as index */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for button */
+.predict-btn:hover {
+  background: #0f547f;
+  transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .predict-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 1.2rem;
+  }
+  .predict-btn {
+    padding: 10px 20px;
+  }
+}

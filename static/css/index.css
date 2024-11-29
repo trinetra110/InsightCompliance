@@ -1,0 +1,115 @@
+/* General styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    #1e3c72,
+    #2a5298
+  ); /* AI-oriented business gradient */
+  background-image: url("../images/background.jpg"); /* Background image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Centering the container */
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* Overlay effect for better readability */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+  width: 500px; /* Default width for larger screens */
+}
+
+/* Flash messages */
+.messages {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* File input styling */
+input[type="file"] {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  border: 2px dashed #4caf50; /* Green for AI-business style */
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Upload button styling */
+.upload-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #049a9f; /* Distinct bright color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the button */
+.upload-btn:hover {
+  background: #0f547f;
+  transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="file"] {
+    font-size: 0.9rem;
+  }
+
+  .upload-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  input[type="file"] {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .upload-btn {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+  }
+}
